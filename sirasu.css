@@ -1,19 +1,18 @@
 body {
-    font-family: system-ui;
-    background: #E4E4E4;
-    color: black;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #393E46;
-    text-align: senter;
-  }
-  
-  h2 {
-    color: #393E46;
-    text-align: senter;
-  }
-  div{
-    align: senter;
-  }
+  font-family: system-ui;
+  background: #E4E4E4;
+  text-align: center;
+}
+
+h1 {
+  color: #393E46;
+  text-align: senter;
+}
+
+h2 {
+  color: #393E46;
+  text-align: senter;
+}
+div{
+  align: senter;
+}
