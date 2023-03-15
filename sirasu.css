@@ -3,6 +3,11 @@ body {
   text-align: center;
 }
 
+
+h1 {
+  text-align: senter;
+}
+
 h1 {
   text-align: senter;
 }
@@ -12,4 +17,89 @@ h2 {
 }
 div{
   align: senter;
+}
+
+@import url(https://fonts.bunny.net/css?family=alata:400);
+
+body {
+	margin: 0;
+	padding: 4vw;
+	font-family: 'Alata', sans-serif;
+}
+
+
+
+/* --------------------------------
+  Hero
+-------------------------------- */
+
+/* ------ slide image ------- */
+.hero-slide__img {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: slideAnime;
+  animation-timing-function: ease;
+  display: block;
+  min-height: 100vh;
+  object-fit: cover;
+  opacity: 0;
+  width: 100%;  
+  z-index: 1; 
+}
+
+.hero-slide__item:nth-of-type(1) .hero-slide__img {
+  animation-delay: 0s;
+}
+
+.hero-slide__item:nth-of-type(2) .hero-slide__img {
+  animation-delay: 5s;
+}
+
+.hero-slide__item:nth-of-type(3) .hero-slide__img {
+  animation-delay: 10s;
+}
+
+@keyframes slideAnime {
+  0% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+}
+
+/* ------ hero erea ------- */
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__inner {
+  margin: 0 auto;
+  width: 100px;
+}
+
+/* ------ hero title ------- */
+
+.hero-slide__item {
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  right: -10%;
+  width: 110%;
 }
